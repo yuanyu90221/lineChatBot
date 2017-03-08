@@ -32,7 +32,7 @@ function _bot() {
     if (event.message.type == 'text') {
       var msg = event.message.text;
       var replyMsg = '';
-      if (msg.indexOf('PM2.5') != -1) {
+      if (msg.indexOf('PM2.5')||msg.indexOf('pm2.5') != -1) {
         pm.forEach(function(e, i) {
           if (msg.indexOf(e[0]) != -1) {
             replyMsg = e[0] + '的 PM2.5 數值為 ' + e[1];
