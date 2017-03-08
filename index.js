@@ -41,7 +41,8 @@ function _bot() {
         if (replyMsg == '') {
           replyMsg = '請輸入正確的地點';
         }
-      } else if(msg.indexOf('Tommy') != -1){
+      } 
+      if(msg.indexOf('Tommy') != -1){
         replyMsg = 'Tommy哥天才!';
       }
       if (replyMsg == '') {
