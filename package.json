@@ -1,0 +1,19 @@
+{
+  "name": "line_bot",
+  "version": "1.0.0",
+  "description": "line bot with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "line",
+    "bot"
+  ],
+  "author": "yuanyu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "linebot": "^1.2.1"
+  }
+}
