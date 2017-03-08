@@ -1,6 +1,6 @@
 const linebot = require('linebot');
 const express = require('express');
-
+const getJSON = require('get-json');
 var timer;
 var pm = [];
 _getJSON();
