@@ -3,14 +3,13 @@ const express = require('express');
 const getJSON = require('get-json');
 var timer;
 var pm = [];
-_getJSON();
-
-_bot();
-var bot = linebot({
+let bot = linebot({
   channelId: '1504696193',
   channelSecret: 'f866d3123893ea89749da78aa08f9844',
   channelAccessToken: 'bv6C//VSNXAOJ19xWX1kf91iq7t5VAMHO4b1PdGYQrF3sUBH2B+XEA8HzbaF7r4WoVPTFYmjOvq4wMiC1ySe+Xi7oBApYTQjsuiis4XvuplrpBQ2mAxvBAiOnuTF4TTKGLOBgtAGxpSnBOEvssfpmQdB04t89/1O/w1cDnyilFU='
 });
+
+
 
 // bot.on('message', function(event) {
 //   console.log(event); //把收到訊息的 event 印出來看看
@@ -25,7 +24,9 @@ var server = app.listen(process.env.PORT || 8080, function() {
   var port = server.address().port;
   console.log("App now running on port", port);
 });
+_getJSON();
 
+_bot();
 function _bot() {
   bot.on('message', function(event) {
     if (event.message.type == 'text') {
