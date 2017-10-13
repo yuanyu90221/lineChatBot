@@ -5,7 +5,7 @@ var timer;
 var pm = [];
 let bot = linebot({
   channelId: '1504696193',
-  channelSecret: 'f866d3123893ea89749da78aa08f9844',
+  channelSecret: precess.env.CHANNELSECRET,
   channelAccessToken: 'bv6C//VSNXAOJ19xWX1kf91iq7t5VAMHO4b1PdGYQrF3sUBH2B+XEA8HzbaF7r4WoVPTFYmjOvq4wMiC1ySe+Xi7oBApYTQjsuiis4XvuplrpBQ2mAxvBAiOnuTF4TTKGLOBgtAGxpSnBOEvssfpmQdB04t89/1O/w1cDnyilFU='
 });
 
